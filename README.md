@@ -1,10 +1,10 @@
-# 🏈 NFL Play-by-Play — Análise e Regressão Linear
+# NFL Play-by-Play — Análise e Regressão Linear
 
 Notebook de ciência de dados aplicado ao dataset de jogadas play-by-play da NFL (2009–2017), cobrindo o pipeline completo de pré-processamento, análise exploratória e modelagem preditiva.
 
 ---
 
-## 📋 Descrição
+## Descrição
 
 Este projeto foi desenvolvido como atividade acadêmica da disciplina de Ciência de Dados. O objetivo é aplicar as etapas fundamentais de um projeto de dados reais:
 
@@ -16,18 +16,17 @@ Este projeto foi desenvolvido como atividade acadêmica da disciplina de Ciênci
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
-📦 nfl-regressao-linear
- ┣ 📓 nfl_regressao_linear.ipynb   ← notebook principal
- ┣ 📄 nfl_otimizado.parquet        ← dataset exportado e otimizado
- ┗ 📄 README.md                    ← este arquivo
+nfl-regressao-linear-2009-2017
+ ┣ nfl_regressao_linear.ipynb   ← notebook principal
+ ┗ README.md                    ← este arquivo
 ```
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 **NFL Play by Play 2009–2017 (v4)**  
 Fonte: [Kaggle — maxhorowitz/nflplaybyplay2009to2016](https://www.kaggle.com/datasets/maxhorowitz/nflplaybyplay2009to2016)
@@ -43,7 +42,7 @@ O dataset é carregado diretamente via `kagglehub` — não é necessário baixa
 
 ---
 
-## 🗂️ Estrutura do Notebook
+## Estrutura do Notebook
 
 | Seção | Conteúdo |
 |---|---|
@@ -59,7 +58,7 @@ O dataset é carregado diretamente via `kagglehub` — não é necessário baixa
 
 ---
 
-## 🎯 Modelagem
+## Modelagem
 
 ### Variável Dependente
 **`Yards.Gained`** — jardas ganhas por jogada. Métrica central do futebol americano.
@@ -80,7 +79,7 @@ O dataset é carregado diretamente via `kagglehub` — não é necessário baixa
 
 ---
 
-## ⚙️ Otimização de Memória
+## Otimização de Memória
 
 A tipificação adequada reduziu significativamente o uso de memória:
 
@@ -92,7 +91,7 @@ A tipificação adequada reduziu significativamente o uso de memória:
 
 ---
 
-## 🏆 Desafio Extra — Parquet com Brotli
+## Desafio Extra — Parquet com Brotli
 
 O dataset foi exportado em formato Parquet com compressão Brotli, combinando três otimizações simultâneas:
 
@@ -104,7 +103,7 @@ Todos os dtypes são preservados na exportação e verificados na releitura.
 
 ---
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 
@@ -118,11 +117,11 @@ pip install pandas numpy matplotlib seaborn scikit-learn kagglehub pyarrow
 2. Execute **Kernel → Restart & Run All**
 3. O dataset é baixado automaticamente via `kagglehub`
 
-> ⚠️ É necessário ter uma conta no Kaggle e o token configurado para usar o `kagglehub`.
+> É necessário ter uma conta no Kaggle e o token configurado para usar o `kagglehub`.
 
 ---
 
-## 📦 Dependências
+## Dependências
 
 | Biblioteca | Uso |
 |---|---|
@@ -136,12 +135,12 @@ pip install pandas numpy matplotlib seaborn scikit-learn kagglehub pyarrow
 
 ---
 
-## 📝 Observações sobre o R²
+## Observações sobre o R²
 
 O R² baixo nos modelos é **esperado e contextualmente justificado**. Jardas ganhas em uma jogada individual dependem de fatores não capturáveis numericamente: leitura de defesa, habilidade individual, condições físicas e variabilidade inerente ao esporte. O modelo captura tendências táticas populacionais, não o resultado de cada jogada específica.
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
-Desenvolvido por **Sandro** — Ciência de Dados, 2025
+Desenvolvido por **Sandro Viviani Filho** — Ciência de Dados, 2025
