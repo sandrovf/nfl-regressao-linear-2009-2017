@@ -1,1 +1,0 @@
-# nfl-regressao-linear-2009-2017
